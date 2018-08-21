@@ -1,0 +1,14 @@
+Package: HGNC
+Type: Package
+Title: Convert Gene IDs
+Version: 0.99.0
+Date: 2018-6-9
+Author: Zuguang Gu
+Maintainer: Zuguang Gu <z.gu@dkfz.de>
+Depends: R (>= 3.1.2)
+Suggests: testthat, knitr
+VignetteBuilder: knitr
+Description: It only converts between gene symbol, Entrez IDs, Ensembl IDs
+  and RefSeq ids for human.
+License: MIT + file LICENSE
+RoxygenNote: 6.0.1

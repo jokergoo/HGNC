@@ -1,0 +1,45 @@
+<!--
+%\VignetteEngine{knitr}
+%\VignetteIndexEntry{Convert Gene IDs}
+-->
+
+Convert Gene IDs
+========================================
+
+**Author**: Zuguang Gu ( z.gu@dkfz.de )
+
+**Date**: `r Sys.Date()`
+
+**Package version**: `r installed.packages()["HGNC", "Version"]`
+
+-------------------------------------------------------------
+
+This package only supports gene ID conversion between gene symbol, Entrez IDs, Ensembl IDs
+and RefSeq IDs, and only avaible for human.
+
+The function accepts three arguments which are:
+
+- `id`: a list of gene IDs;
+- `from`: the ID type for the input gene IDs. By default it is inferred from the input gene ID (
+  only the first one of `id`);
+- `to`: the ID type that user wants to convert to.
+
+
+In following example, we convert three genes from gene symbol to Ensembl IDs:
+
+```{r}
+library(HGNC)
+ids = c("TP53", "TP63", "TP73")
+id_convert(ids, to = "Ensembl")
+```
+
+```{r}
+plot(1)
+```
+
+## Session info
+
+```{r}
+sessionInfo()
+```
+
